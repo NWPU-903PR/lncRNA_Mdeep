@@ -13,20 +13,6 @@ from model import processing
 import keras
 from keras.models import load_model
 
-from sklearn import metrics
-import matplotlib.pyplot as plt
-
-from keras import backend
-import keras.backend.tensorflow_backend as KTF
-import os
-import tensorflow as tf
-
-os.environ["CUDA_VISIBLE_DEVICES"] = "1"
-config = tf.ConfigProto(allow_soft_placement=True)
-gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.5)
-config.gpu_options.allow_growth = True
-sess = tf.Session(config=config)
-KTF.set_session(sess)
 
 
 def extract_feas(fastafile):
