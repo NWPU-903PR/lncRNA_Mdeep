@@ -10,5 +10,5 @@ Dependencies：
 
 Usage:
 
-python3 Mdeep_lncRNA.py -i (fasta_file) -o (output.txt)
+python3 lncRNA_Mdeep.py -i (fasta_file) -o (output.txt)
 
