@@ -10,5 +10,7 @@ Author: Xiaonan Fan, fanxiaonan0223@gmail.com
 
 
 # Usage:
+(1) predict
 python3 lncRNA_Mdeep.py -i (fasta_file) -o (output.txt)
 
+(2) retrain
