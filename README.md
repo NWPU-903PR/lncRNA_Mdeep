@@ -7,6 +7,7 @@ lncRNA_Mdeep is currently pre-trained on human training dataset and the pre-trai
 
 ## Dependencies: 
 (1) numpy; (2) biopthon; (3) keras
+
 To install the dependencies, type the following command:
 
     $ sudo pip3 install numpy
@@ -16,12 +17,12 @@ To install the dependencies, type the following command:
 ## Usage:
     $ python3 lncRNA_Mdeep.py -i (fasta_file) -o (output.txt)
   
-   #### input.fasta: input file, it should be a FASTA sequence file, e.g.:
+   ##### input.fasta: input file, it should be a FASTA sequence file, e.g.:
     >transcripts _1
       GTGCACACGGCTCCCATGCGTTGTCTTCCGAGCGTCAGGCCGCCCCTACCCGTGCTTTCTGCTCTGCAGACCCTCTTCCTAGACCTCCGTCCTTTGTCCCATCGCTGCCTTCCCCTCAAGCTCAGGGCCAAGCTGTCCGCCAACCTCGGCTCCTCCGGGCAGCCCTCGCCCGGGGTGCGCCCCGGGGCAGGACCCCCAGCCCACGCCCAGGGCCCGCCCCTGCCCTCCAGCCCTACGCCTTGACCCGCTTTCCTGCGTCTCTCAGCCTACCTGACCTTGTCTTTACCTCTGT…
     >transcripts_2
     TCAGCCTCCCAAGTAGCTGGGGCTACAGGCACCTGCCACCAAACCCGGCTAATTTTTTTGTATTTTTAGTAGAGACGGGGTTTCACCGTGTTAGCCAGGATCGTCTTGATCTCCTGACCTTGTGATCCACCCGCCTCGGCCTCCCAAATTGCTGGGATTACAGATGTGAGCCACCGCACCTGGTCCAAGAACCCAAGTTTTAGATCTAGAGTGATGTCAGCATGACATTGATTTCCTGAGGCCCAGGGGCGAAGGAGCTGAGGACAGCAGAGGGGTG…
-   #### output.txt: output file, it shows the predicted probability whether the inputs transcripts are lncRNA or not, e.g.:
+   ##### output.txt: output file, it shows the predicted probability whether the inputs transcripts are lncRNA or not, e.g.:
     0.87
     0.21
     # If the predicted probability is bigger than 0.5, the corresponding input transcript is lncRNA. 
