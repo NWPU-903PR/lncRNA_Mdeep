@@ -30,5 +30,7 @@ To install the dependencies, type the following command:
 
 # Contact:
 If you have any questions, please do not hesitate to contact us.
+
 Shao-Wu Zhang, zhangsw@nwpu.edu.cn
+
 Xiao-Nan Fan, fanxn@mail.nwpu.eud.cn
