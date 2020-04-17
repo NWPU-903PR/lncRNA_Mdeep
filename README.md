@@ -8,7 +8,7 @@ lncRNA_Mdeep is currently pre-trained on human training dataset and the pre-trai
 ## Prerequisites: 
 (1) numpy; (2) biopthon; (3) keras
 
-To install the dependencies, type the following command:
+To install numpy, biopthon, and keras, type the following command:
 
     $ sudo pip3 install numpy
     $ sudo pip3 install biopthon
