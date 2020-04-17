@@ -5,7 +5,7 @@ lncRNA_Mdeep is a computational tool for distinguishing lncRNAs from protein-cod
 
 lncRNA_Mdeep is currently pre-trained on human training dataset and the pre-trained model is available in ./models/best_models.h5. 
 
-## Dependencies: 
+## Prerequisites: 
 (1) numpy; (2) biopthon; (3) keras
 
 To install the dependencies, type the following command:
