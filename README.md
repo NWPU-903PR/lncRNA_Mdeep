@@ -16,6 +16,7 @@ To install numpy, biopthon, and keras, type the following command:
 
 ## Usage:
 1）identify lncRNAs
+
     $ python3 lncRNA_Mdeep.py -i (fasta_file) -o (output.txt)
   
    ##### input.fasta: input file, it should be a FASTA sequence file, e.g.:
@@ -30,7 +31,10 @@ To install numpy, biopthon, and keras, type the following command:
     Otherwise, the input transcript is not lncRNA. 
 
 2) retrain a new model
-     $ python3 lncRNA_Mdeep.py -retrain (input.fasta)
+
+       $ python3 lncRNA_Mdeep.py -retrain (fasta_file)
+       
+       ## to be continue
 
 # Contact:
 If you have any questions, please do not hesitate to contact us.
