@@ -30,11 +30,12 @@ To install numpy, biopthon, and keras, type the following command:
     # If the predicted probability is bigger than 0.5, the corresponding input transcript is lncRNA. 
     Otherwise, the input transcript is not lncRNA. 
 
-2) retrain a new model
+2）retrain a new model
 
        $ python3 lncRNA_Mdeep.py -retrain (fasta_file)
        
-      #note: the re-trained new model will be saved in the fold [model]
+      #note: Currently we cannot adjust the hyper-parameters automatically. 
+      #The re-trained new model will be named as 'new_model.h5' and saved in the fold of [model]
 
 # Contact:
 If you have any questions, please do not hesitate to contact us.
