@@ -15,7 +15,7 @@ To install numpy, biopthon, and keras, type the following command:
     $ sudo pip3 install keras
 
 ## Usage:
-1）identify lncRNAs
+### 1）identify lncRNAs
 
     $ python3 lncRNA_Mdeep.py -i (fasta_file) -o (output.txt)
   
@@ -28,7 +28,7 @@ To install numpy, biopthon, and keras, type the following command:
     transcripts _1 noncoding 0.87
     transcripts _2 coding 0.21
 
-2）retrain a new model
+### 2）retrain a new model
 
        $ python3 lncRNA_Mdeep.py -retrain (training.fasta) -l (labels.txt)
          
@@ -39,10 +39,12 @@ To install numpy, biopthon, and keras, type the following command:
     0
     0
     1
-    # If the label = 1, the coresponding transcript in training data is a lncRNA. If the label = 0, the coresponding transcript in training data is a protein-coding RNA. Please make sure the number of labels is equal to the the number of training transcripts.
+    # If the label = 1, the coresponding transcript in training data is a lncRNA. 
+    # If the label = 0, the coresponding transcript in training data is a protein-coding RNA. 
+    # Please make sure the number of labels is equal to the the number of training transcripts.
        
-     ##note: Currently we cannot adjust the hyper-parameters automatically. 
-     ##The re-trained new model will be named as 'new_model.h5' and saved in the fold of [model]
+     ## note: Currently we cannot adjust the hyper-parameters automatically. 
+     ## The re-trained new model will be named as 'new_model.h5' and saved in the fold of [model]
 
 # Contact:
 If you have any questions, please do not hesitate to contact us.
