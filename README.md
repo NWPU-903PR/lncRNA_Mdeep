@@ -34,7 +34,7 @@ To install numpy, biopthon, and keras, type the following command:
 
        $ python3 lncRNA_Mdeep.py -retrain (fasta_file)
        
-       ## to be continue
+      #note: the re-trained new model will be saved in the fold [model]
 
 # Contact:
 If you have any questions, please do not hesitate to contact us.
