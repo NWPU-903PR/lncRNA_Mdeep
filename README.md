@@ -24,18 +24,25 @@ To install numpy, biopthon, and keras, type the following command:
     GTGCACACGGCTCCCATGCGTTGTCTTCCGAGCGTCAGGCCGCCCCTACCCGTGCTTTCTGCTCTGCAGACCCTCTTCCTAGACCTCCGTCCTTTGTCCCATCGCTGCCTTCCCCTCAAGCTCAGGGCCAAGCTGTCCGCCAACCTCGGCTCCTCCGGGCAGCCCTCGCCCGGGGTGCGCCCCGGGGCAGGACCCCCAGCCCACGCCCAGGGCCCGCCCCTGCCCTCCAGCCCTACGCCTTGACCCGCTTTCCTGCGTCTCTCAGCCTACCTGACCTTGTCTTTACCTCTGT…
     >transcripts_2
     TCAGCCTCCCAAGTAGCTGGGGCTACAGGCACCTGCCACCAAACCCGGCTAATTTTTTTGTATTTTTAGTAGAGACGGGGTTTCACCGTGTTAGCCAGGATCGTCTTGATCTCCTGACCTTGTGATCCACCCGCCTCGGCCTCCCAAATTGCTGGGATTACAGATGTGAGCCACCGCACCTGGTCCAAGAACCCAAGTTTTAGATCTAGAGTGATGTCAGCATGACATTGATTTCCTGAGGCCCAGGGGCGAAGGAGCTGAGGACAGCAGAGGGGTG…
-   ##### output.txt: output file, it shows the predicted probability whether the inputs transcripts are lncRNA or not, e.g.:
-    0.87
-    0.21
-    # If the predicted probability is bigger than 0.5, the corresponding input transcript is lncRNA. 
-    Otherwise, the input transcript is not lncRNA. 
+   ##### output.txt: output file. The first column shows the transcript id, the second column shows the predicted label, and the third column shows the predicted probability, e.g.:
+    transcripts _1 noncoding 0.87
+    transcripts _2 coding 0.21
 
 2）retrain a new model
 
-       $ python3 lncRNA_Mdeep.py -retrain (fasta_file)
+       $ python3 lncRNA_Mdeep.py -retrain (training.fasta) -l (labels.txt)
+         
+   ##### training.fasta: The training transcripts for retraining a new model. 
+   ##### labels.txt. It should be a table with the binary value in one column, representing the coresponding labels for training data, e.g.:
+    1
+    1
+    0
+    0
+    1
+    # If the label = 1, the coresponding transcript in training data is a lncRNA. If the label = 0, the coresponding transcript in training data is a protein-coding RNA. Please make sure the number of labels is equal to the the number of training transcripts.
        
-      #note: Currently we cannot adjust the hyper-parameters automatically. 
-      #The re-trained new model will be named as 'new_model.h5' and saved in the fold of [model]
+     ##note: Currently we cannot adjust the hyper-parameters automatically. 
+     ##The re-trained new model will be named as 'new_model.h5' and saved in the fold of [model]
 
 # Contact:
 If you have any questions, please do not hesitate to contact us.
