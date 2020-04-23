@@ -25,8 +25,8 @@ To install numpy, biopthon, and keras, type the following command:
     >transcripts_2
     TCAGCCTCCCAAGTAGCTGGGGCTACAGGCACCTGCCACCAAACCCGGCTAATTTTTTTGTATTTTTAGTAGAGACGGGGTTTCACCGTGTTAGCCAGGATCGTCTTGATCTCCTGACCTTGTGATCCACCCGCCTCGGCCTCCCAAATTGCTGGGATTACAGATGTGAGCCACCGCACCTGGTCCAAGAACCCAAGTTTTAGATCTAGAGTGATGTCAGCATGACATTGATTTCCTGAGGCCCAGGGGCGAAGGAGCTGAGGACAGCAGAGGGGTG…
    ##### output.txt: output file. The first column shows the transcript id, the second column shows the predicted label, and the third column shows the predicted probability, e.g.:
-    transcripts _1 noncoding 0.87
-    transcripts _2 coding 0.21
+    transcripts _1 noncoding [0.87]
+    transcripts _2 coding [0.21]
 
 ### 2）retrain a new model
 
