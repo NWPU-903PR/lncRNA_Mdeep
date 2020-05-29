@@ -4,12 +4,12 @@ An alignment-free predictor for long non-coding RNAs identification by multimoda
 lncRNA_Mdeep is a computational tool for distinguishing lncRNAs from protein-coding transcripts. It efficiently incorporates the hand-crafted features and raw sequence information by a multimodal deep learning framework to predict the probability whether a transcript is lncRNA or not. LncRNA_Mdeep achieves a good performance on human dataset and multiple cross-species datasets.
 
 ## Prerequisites: 
-(1) numpy; (2) biopthon; (3) keras
+(1) numpy; (2) biopython; (3) keras
 
-To install numpy, biopthon, and keras, type the following command:
+To install numpy, biopython, and keras, type the following command:
 
     $ sudo pip3 install numpy
-    $ sudo pip3 install biopthon
+    $ sudo pip3 install biopython
     $ sudo pip3 install keras
 
 ## Usage:
